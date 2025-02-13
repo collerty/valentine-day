@@ -1,5 +1,5 @@
-import {Back, Yes2} from "@/app/ui/buttons";
 import Link from "next/link";
+import {Back} from "@/app/ui/buttons/back";
 
 export default function Page() {
   return (
@@ -29,7 +29,11 @@ export default function Page() {
         <div className="sm:my-[-2.5rem]">
           <p>Or just say Yes...</p>
         </div>
-        <Yes2/>
+        <Link href="/yes">
+          <button
+              className="w-full h-14 text-white bg-pink-600 rounded-2xl drop-shadow-lg">Yes
+          </button>
+        </Link>
       </div>
     </div>
   )

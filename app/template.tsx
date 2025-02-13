@@ -8,7 +8,7 @@ const variants = {
 
 export default function Template({children}: { children: React.ReactNode }) {
   return (
-    <motion.div className="min-w-[22rem] w-[39rem] h-[32rem] bg-white rounded-2xl relative"
+    <motion.div className="sm:min-w-[22rem] w-full sm:w-[39rem] h-[32rem] bg-white rounded-2xl relative"
                 variants={variants}
                 initial="hidden"
                 animate="enter"
